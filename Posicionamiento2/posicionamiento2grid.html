@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+
+
+<body>
+    <div id="centro">
+        <div id="amarillo"></div>
+        <div id="azul"></div>
+    </div>
+</body>
+
+</html>
+
+<style>
+    body {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+    }
+
+    #centro {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border: dotted rgb(153, 81, 81);
+    }
+
+    #amarillo {
+        background-color: rgb(224, 224, 137);
+        width: 600px;
+        height: 400px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 40px;
+        border: 2px solid black;
+    }
+
+    #azul {
+        background-color: rgb(174, 243, 243);
+        width: 600px;
+        height: 400px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-right: 40px;
+        border: 2px solid rgb(153, 81, 81);
+    }
+</style>

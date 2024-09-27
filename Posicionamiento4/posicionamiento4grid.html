@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+
+
+<body>
+    <div id="centro">
+        <div id="naranja"></div>
+        <div id="azul"></div>
+    </div>
+</body>
+
+</html>
+
+<style>
+    body {
+        display: grid;
+        place-items: center;
+    }
+
+    #centro {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        border-style: dotted;
+        border-color: black;
+        width: fit-content;
+        gap: 20px;
+        width: 40%;
+        padding: 20px;
+    }
+
+
+    #naranja {
+        background-color: #FF7F50;
+        width: 100%;
+        height: 250px;
+    }
+
+    #azul {
+        background-color: #6495ED;
+        width: 100%;
+        height: 250px;
+    }
+</style>

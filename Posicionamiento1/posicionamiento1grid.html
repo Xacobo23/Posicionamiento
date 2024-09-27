@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<body>
+    <div id="azul"></div>
+    <div id="blanco"></div>
+    <div id="rojo"></div>
+</body>
+</html>
+
+<style>
+    body{
+        display: grid;
+        grid-template-columns: 350px 350px 350px;
+    }
+    
+    div{
+        border-style: dotted;
+    }
+
+    #azul{
+        background-color: blue;
+        width: 350px;
+        height: 400px;
+        border-right: 0;
+    
+    }
+    #blanco{
+        background-color: white;
+        width: 350px;
+        height: 400px;
+        border-right: 0;
+        border-left: 0;
+    }
+    #rojo{
+        background-color: red;
+        width: 350px;
+        height: 400px;
+        border-left: 0;
+    }
+</style>
