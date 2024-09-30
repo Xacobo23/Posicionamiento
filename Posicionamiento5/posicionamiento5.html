@@ -1,28 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Posicionamiento 5</title>
 </head>
+
 <body>
-    <div id="ciz">
-        <div id="arriba"></div>
-        <div id="abaixo">
-            <div id="rojonaranja">
-                <div id="rojo"></div>
-                <div id="naranja"></div>
+    <div id="todo">
+        <div id="ciz">
+            <div id="arriba"></div>
+            <div id="abaixo">
+                <div id="rojonaranja">
+                    <div id="rojo"></div>
+                    <div id="naranja"></div>
+                </div>
+                <div id="rosa"></div>
             </div>
-            <div id="rosa"></div>
+        </div>
+        <div id="cde">
+            <div id="verde"></div>
+            <div id="azul"></div>
+            <div id="marron"></div>
         </div>
     </div>
-    <div id="cde">
-        <div id="verde"></div>
-        <div id="azul"></div>
-        <div id="marron"></div>
-    </div>
 </body>
+
 </html>
 
 <style>
+    #todo {
+        float: left;
+        position: relative;
+        left: -50%;
+    }
+
+    body {
+        float: left;
+        position: relative;
+        left: 50%;
+        float: center;
+        width: fit-content;
+    }
+
+    #ciz {
+        float: left;
+    }
+
+    #cde {
+        float: right;
+    }
+
+    #arriba {
+        width: 400px;
+        height: 250px;
+        background-color: aquamarine;
+        margin: 10px;
+    }
+
+    #abaixo {
+        float: left;
+    }
+
+    #rojonaranja {
+        float: left;
+    }
+
+    #rojo {
+        background-color: red;
+        width: 150px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    #naranja {
+        background-color: rgb(255, 136, 0);
+        width: 150px;
+        height: 200px;
+        margin: 10px;
+    }
+
+    #rosa {
+        background-color: magenta;
+        width: 230px;
+        height: 310px;
+        float: right;
+        margin: 10px;
+    }
+
+    #verde {
+        background-color: green;
+        width: 200px;
+        height: 100px;
+        margin: 10px;
+    }
+
+    #azul {
+        background-color: blue;
+        width: 200px;
+        height: 410px;
+        margin: 10px;
+    }
+    
+    #marron {
+        background-color: burlywood;
+        width: 200px;
+        height: 50px;
+        margin: 10px;
+    }
 </style>
