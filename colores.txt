@@ -1,0 +1,7 @@
+background-color: #7FFFD4;
+background-color: #FF0000;
+background-color: #FF6D00;
+background-color: #FF00FF;
+background-color: #008000;
+background-color: #01509F;
+background-color: #CA9E61;

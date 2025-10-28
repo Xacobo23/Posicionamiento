@@ -10,7 +10,9 @@
 <body>
     <div id="todo">
         <div id="ciz">
-            <div id="arriba"></div>
+            <div id="arriba">
+                <div id="celeste"></div>
+            </div>
             <div id="abaixo">
                 <div id="rojonaranja">
                     <div id="rojo"></div>
@@ -29,79 +31,147 @@
 
 </html>
 
+<!-- Con flex 
 <style>
     body {
-        margin: auto;
-        width: fit-content;
+        display: flex;
+        justify-content: center;
     }
 
     #todo {
-        min-width: 100%;
+        width: 70%;
+        display: flex;
+        gap: 1%;
     }
 
     #ciz {
-        float: left;
+        width: 60%;
+        height: 80vh !important;
+        display: flex;
+        flex-direction: column;
+        gap: 2%;
     }
 
     #cde {
-        float: left;
+        width: 40%;
+        height: 80vh !important;
+        display: flex;
+        flex-direction: column;
+        gap: 2%;
     }
 
     #arriba {
-        width: 400px;
-        height: 250px;
+        height: 50%;
+        width: 100%;
+    }
+
+    #celeste{
+        height: 100%;
         background-color: #7FFFD4;
-        margin: 10px;
     }
 
     #abaixo {
-        float: left;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        gap: 2%;
     }
 
     #rojonaranja {
-        float: left;
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 4%;
     }
 
     #rojo {
         background-color: #FF0000;
-        width: 150px;
-        height: 100px;
-        margin: 10px;
+        height: 30%;
+        width: 100%;
     }
 
     #naranja {
+        height: 70%;
         background-color: #FF6D00;
-        width: 150px;
-        height: 200px;
-        margin: 10px;
+        width: 100%;
     }
 
     #rosa {
         background-color: #FF00FF;
-        width: 230px;
-        height: 310px;
-        float: left;
-        margin: 10px;
+        width: 60%;
+        height: 100%;
     }
 
     #verde {
         background-color: #008000;
-        width: 200px;
-        height: 100px;
-        margin: 10px;
+        height: 25%;
+        width: 100%;
     }
 
     #azul {
         background-color: #01509F;
-        width: 200px;
-        height: 410px;
-        margin: 10px;
+        height: 65%;        
+        width: 100%;
+
     }
 
     #marron {
         background-color: #CA9E61;
-        width: 200px;
-        height: 50px;
-        margin: 10px;
+        height: 10%;
+        width: 100%;
+
+    }
+</style> -->
+
+<style>
+    #todo{
+        display: grid;
+        width: 50%;
+        margin: auto;
+        grid-template-columns: 60fr 40fr;
+        height: 80vh;
+        gap: 1%;
+    }
+    #cde{
+        display: grid;
+        grid-template-rows: 35fr 60fr 15fr;
+        gap: 1.5%;
+    }
+    #verde{
+        background-color: #008000;
+    }
+    #azul{
+        background-color: #01509F;
+    }
+    #marron{
+        background-color: #CA9E61;
+    }
+    #ciz{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 1%;
+    }
+    #arriba{
+        background-color: #7FFFD4;
+    }
+    #abaixo{
+        display: grid;
+        grid-template-columns: 4fr 6fr;
+        gap: 2%;
+    }
+    #rojonaranja{
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        gap: 2.5%;
+    }
+    #rojo{
+        background-color: #FF0000;
+    }
+    #naranja{
+        background-color: #FF6D00;
+    }
+    #rosa{
+        background-color: #FF00FF;
     }
 </style>
